@@ -27,11 +27,15 @@ a.active {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     text-transform: uppercase;
 /*    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+h4 {
     font-family: 'Lora', serif;
     font-weight: 700;
 }
@@ -468,4 +472,16 @@ footer .footer-below {
     font-family: 'Lora', serif;
     font-size: 1.25em;
     text-align: left;
+}
+
+div.work-experience {
+      font-size: 1.1em;
+      line-height: 1.4em;
+      margin-bottom: 20px;
+}
+
+p.subDetails {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 3px;
 }
