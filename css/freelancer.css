@@ -27,15 +27,11 @@ a.active {
 h1,
 h2,
 h3,
-h5,
+h4, 
+h5, 
 h6 {
     text-transform: uppercase;
 /*    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: 'Lora', serif;
-    font-weight: 700;
-}
-
-h4 {
     font-family: 'Lora', serif;
     font-weight: 700;
 }
@@ -474,14 +470,21 @@ footer .footer-below {
     text-align: left;
 }
 
-div.work-experience {
+div.work-experience-header {
       font-size: 1.1em;
-      line-height: 1.4em;
+      line-height: 1.3em;
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      margin-bottom: -2px;
+}
+div.work-experience {
+      font-size: 1em;
+      line-height: 1.2em;
       margin-bottom: 20px;
 }
 
 p.subDetails {
-  font-size: 1em;
+  font-size: .9em;
   font-style: italic;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
