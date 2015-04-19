@@ -26,12 +26,17 @@ a.active {
 
 h1,
 h2,
-h3,
-h4, 
+h3, 
 h5, 
 h6 {
     text-transform: uppercase;
 /*    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+h4
+{
     font-family: 'Lora', serif;
     font-weight: 700;
 }
@@ -288,7 +293,7 @@ section.success {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #939393;
 }
 
 .floating-label-form-group input,
@@ -324,7 +329,7 @@ section.success {
 
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #eee;
+    border-left: 1px solid #939393;
 }
 
 .floating-label-form-group-with-value label {
@@ -337,7 +342,7 @@ section.success {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #939393;
 }
 
 footer {
@@ -481,6 +486,7 @@ div.work-experience {
       font-size: 1em;
       line-height: 1.2em;
       margin-bottom: 20px;
+      font-family: 'Lora', serif;
 }
 
 p.subDetails {
