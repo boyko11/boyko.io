@@ -1,0 +1,3 @@
+JAVA_HOME=/opt/jdk1.8.0_45
+JRE_HOME=/opt/jdk1.8.0_45/jre
+PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin
