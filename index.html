@@ -18,15 +18,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
   <style type="text/css">
-
-    .card {
-
-    }
     
     a .card {
       color: white;
-      font-family: 'Open Sans Condensed', sans-serif;
-      font-size: 1.7em;
+      font-family: 'Fredericka the Great', serif;
+      font-size: 1.3em;
     }
 
     .card {
@@ -34,7 +30,6 @@
 	    box-shadow: 3px 3px #c6dec8;
 	    border: 1px solid #c1c1c1;
     }
-
 
     .card:hover {
       background-color: #036ba2;
@@ -59,15 +54,54 @@
     	background-color: #4e4e4e;"
     }
 
+    section#cards div.row div.col-sm-4 {
+    	margin-top: .5em;
+    }
+
     section#legend {
 	    color: white;
 	    margin-top: 1em;
 	    font-size: .93em;
     }
 
-    div.row {
-    	margin-top: .5em;
+    .original {
+    	display: block;
     }
+
+    .abbreviated {
+    	display: none;
+    }
+
+    /* Media Queries */
+
+
+    @media screen and (max-width: 1000px) {
+	    a .card {
+	      font-size: 1em;
+	    }
+	}
+
+    @media screen and (max-width: 767px) {
+
+	    .original {
+	    	display: none;
+	    }
+	    .abbreviated {
+	    	display: block;
+	    }
+	}
+
+    @media screen and (max-width: 575px) {
+	    a .card {
+	      font-size: 1.3em;
+	    }
+	    .original {
+	    	display: block;
+	    }
+	    .abbreviated {
+	    	display: none;
+	    }
+	}
 
   </style>
 </head>
@@ -113,8 +147,10 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            Linear Regression*
+		            <span class="original">Linear Regression*</span>
+		            <span class="abbreviated">LinReg*</span>
 		          </p>
+
 		        </div>
 		      </div>
 		    </a>
@@ -125,9 +161,8 @@
 	      <a href="https://github.com/boyko11/LogisticRegression" target="_blank">
 	        <div class="card">
 	          <div class="card-body text-center">
-	            <p class="card-text">
-	              Logistic Regression*
-	            </p>
+	            <span class="original">Logistic Regression*</span>
+	            <span class="abbreviated">LogitReg*</span>
 	          </div>
 	        </div>
 	      </a>
