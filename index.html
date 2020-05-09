@@ -51,7 +51,7 @@
     	border: 1px solid gray;border-radius: .3em;
     	box-shadow: 2px 2px #b1b1b1;  
     	font-family: 'Open Sans Condensed', sans-serif; 
-    	background-color: #4e4e4e;"
+    	background-color: #4e4e4e;
     }
 
     section#cards div.row div.col-sm-4 {
@@ -70,6 +70,13 @@
 
     .abbreviated {
     	display: none;
+    }
+
+    sup {
+		font: initial;
+    	font-style: italic;
+    	padding-left: .2em;
+    	font-size: .7em;
     }
 
     /* Media Queries */
@@ -147,8 +154,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression*</span>
-		            <span class="abbreviated">LinReg*</span>
+		            <span class="original">Linear Regression<sup>s</sup></span>
+		            <span class="abbreviated">LinReg<sup>s</sup></span>
 		          </p>
 
 		        </div>
@@ -161,8 +168,8 @@
 	      <a href="https://github.com/boyko11/LogisticRegression" target="_blank">
 	        <div class="card">
 	          <div class="card-body text-center">
-	            <span class="original">Logistic Regression*</span>
-	            <span class="abbreviated">LogitReg*</span>
+	            <span class="original">Logistic Regression<sup>s</sup></span>
+	            <span class="abbreviated">LogitReg<sup>s</sup></span>
 	          </div>
 	        </div>
 	      </a>
@@ -174,7 +181,7 @@
 	        <div class="card">
 	          <div class="card-body text-center">
 	            <p class="card-text">
-	              Neural Net*
+	              Neural Net<sup>s</sup>
 	            </p>
 	          </div>
 	        </div>
@@ -190,7 +197,7 @@
 	        <div class="card">
 	          <div class="card-body text-center">
 	            <p class="card-text">
-	              KNN*
+	              KNN<sup>s</sup>
 	            </p>
 	          </div>
 	        </div>
@@ -204,7 +211,7 @@
 			    <div class="card disabled">
 			      <div class="card-body text-center">
 			        <p class="card-text">
-			          K-Means*
+			          K-Means<sup>s</sup>
 			        </p>
 			      </div>
 			    </div>
@@ -218,7 +225,7 @@
 			    <div class="card disabled">
 			      <div class="card-body text-center">
 			        <p class="card-text">
-			          Naive Bayes*
+			          Naive Bayes<sup>s</sup>
 			        </p>
 			      </div>
 			    </div>
@@ -236,8 +243,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Anomaly Detection*</span>
-		            <span class="abbreviated">Anomaly*</span>
+		            <span class="original">Anomaly Detection<sup>s</sup></span>
+		            <span class="abbreviated">Anomaly<sup>s</sup></span>
 		          </p>
 
 		        </div>
@@ -250,7 +257,7 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span>EM*</span>
+		            <span>EM<sup>s</sup></span>
 		          </p>
 
 		        </div>
@@ -263,8 +270,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Decision Tree*</span>
-		            <span class="abbreviated">DT*</span>
+		            <span class="original">Decision Tree<sup>s</sup></span>
+		            <span class="abbreviated">DT<sup>s</sup></span>
 		          </p>
 
 		        </div>
@@ -281,14 +288,29 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression**</span>
-		            <span class="abbreviated">LinReg**</span>
+		            <span class="original">Linear Regression<sup>tf</sup></span>
+		            <span class="abbreviated">LinReg<sup>tf</sup></span>
 		          </p>
 
 		        </div>
 		      </div>
 		    </a>
   		</div>
+
+  		<div class="col-sm-4">
+			<a href="https://github.com/boyko11/LinRegTorch" target="_blank">
+		      <div class="card">
+		        <div class="card-body text-center">
+		          <p class="card-text">
+		            <span class="original">Linear Regression<sup>pt</sup></span>
+		            <span class="abbreviated">LinReg<sup>pt</sup></span>
+		          </p>
+
+		        </div>
+		      </div>
+		    </a>
+  		</div>
+
   	</div>
 
   	
@@ -296,8 +318,10 @@
 </section>
 
 <section id="legend">
-	<div>* - from scratch</div>
-	<div>** - Tensorflow</div>
+	<div><sup>s</sup> - from scratch</div>
+	<div><sup>tf</sup>  - Tensorflow</div>
+	<div><sup>pt</sup>  - PyTorch</div>
+	<div><sup>sk</sup>  - scikit-learn</div>
 </section>
 
     <script>
