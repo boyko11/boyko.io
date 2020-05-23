@@ -10,56 +10,70 @@
   <meta name="author" content="Boyko Todorov Columbus OH">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
   <style type="text/css">
+
+  	body {
+
+  		font-family: 'Vollkorn', serif;
+  		background-color: #fbfbfb;
+  	}
     
     a .card {
-      color: white;
-      font-family: 'Fredericka the Great', serif;
+      color: black;
       font-size: 1.3em;
     }
 
+    a:hover {
+    	text-decoration: none;
+    }
+
     .card {
-	    background-color: #078fd8;
-	    box-shadow: 3px 3px #c6dec8;
-	    border: 1px solid #c1c1c1;
+	    box-shadow: 2px 2px #d6d6d6;
+	    border: 1px solid #777777;
+	    border-radius: .3em;
+	    background-color: #efefef;
     }
 
     .card:hover {
-      background-color: #036ba2;
+      background-color: #d4d4d4;
     }
 
     .card.disabled:hover {
-      background-color: #036ba2;
+      background-color: #d4d4d4;
     }
 
     section#header {
 
     	padding: .5em; 
-    	font-family: 'Fredericka the Great', serif;color: white;
     }
 
-    section#cards {
+    section.cards {
 
     	padding: .5em;
+    	padding-bottom: 1em;
     	border: 1px solid gray;border-radius: .3em;
-    	box-shadow: 2px 2px #b1b1b1;  
-    	font-family: 'Open Sans Condensed', sans-serif; 
-    	background-color: #4e4e4e;
+    	box-shadow: 2px 2px #d6d6d6;  
+    	margin-bottom: .5em;
     }
 
-    section#cards div.row div.col-sm-4 {
+    section.cards span.label {
+
+	    font-size: .97em;
+    	font-style: italic;
+    }
+
+    section.cards div.row div.col-sm-4 {
     	margin-top: .5em;
     }
 
     section#legend {
-	    color: white;
+	    /*color: white;*/
 	    margin-top: 1em;
 	    font-size: .93em;
     }
@@ -70,13 +84,6 @@
 
     .abbreviated {
     	display: none;
-    }
-
-    sup {
-		font: initial;
-    	font-style: italic;
-    	padding-left: .2em;
-    	font-size: .7em;
     }
 
     /* Media Queries */
@@ -113,7 +120,8 @@
   </style>
 </head>
 
-<body style="background-color: #424242">
+<!-- <body style="background-color: #424242"> -->
+<body>
  
 <div class="container">
 
@@ -145,7 +153,9 @@
 
   </section>
 
-  <section id="cards">
+  <section class="cards">
+
+  	<span class="label">From Scratch</span>
 
   	<div class="row">
 
@@ -154,8 +164,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression<sup>s</sup></span>
-		            <span class="abbreviated">LinReg<sup>s</sup></span>
+		            <span class="original">Linear Regression</span>
+		            <span class="abbreviated">LinReg</span>
 		          </p>
 
 		        </div>
@@ -168,8 +178,8 @@
 	      <a href="https://github.com/boyko11/LogisticRegression" target="_blank">
 	        <div class="card">
 	          <div class="card-body text-center">
-	            <span class="original">Logistic Regression<sup>s</sup></span>
-	            <span class="abbreviated">LogitReg<sup>s</sup></span>
+	            <span class="original">Logistic Regression</span>
+	            <span class="abbreviated">LogitReg</span>
 	          </div>
 	        </div>
 	      </a>
@@ -181,7 +191,7 @@
 	        <div class="card">
 	          <div class="card-body text-center">
 	            <p class="card-text">
-	              Neural Net<sup>s</sup>
+	              Neural Net
 	            </p>
 	          </div>
 	        </div>
@@ -197,7 +207,7 @@
 	        <div class="card">
 	          <div class="card-body text-center">
 	            <p class="card-text">
-	              KNN<sup>s</sup>
+	              KNN
 	            </p>
 	          </div>
 	        </div>
@@ -211,7 +221,7 @@
 			    <div class="card disabled">
 			      <div class="card-body text-center">
 			        <p class="card-text">
-			          K-Means<sup>s</sup>
+			          K-Means
 			        </p>
 			      </div>
 			    </div>
@@ -225,7 +235,7 @@
 			    <div class="card disabled">
 			      <div class="card-body text-center">
 			        <p class="card-text">
-			          Naive Bayes<sup>s</sup>
+			          Naive Bayes
 			        </p>
 			      </div>
 			    </div>
@@ -243,8 +253,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Anomaly Detection<sup>s</sup></span>
-		            <span class="abbreviated">Anomaly<sup>s</sup></span>
+		            <span class="original">Anomaly Detection</span>
+		            <span class="abbreviated">Anomaly</span>
 		          </p>
 
 		        </div>
@@ -257,7 +267,7 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span>EM<sup>s</sup></span>
+		            <span>EM</span>
 		          </p>
 
 		        </div>
@@ -270,8 +280,8 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Decision Tree<sup>s</sup></span>
-		            <span class="abbreviated">DT<sup>s</sup></span>
+		            <span class="original">Decision Tree</span>
+		            <span class="abbreviated">DT</span>
 		          </p>
 
 		        </div>
@@ -280,6 +290,14 @@
   		</div>
 
   	</div>
+
+</section>
+
+<hr class="solid">
+
+<section class="cards">
+
+  	<span class="label">Tensorflow</span>
 
 	<div class="row">
 
@@ -288,22 +306,58 @@
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression<sup>tf</sup></span>
-		            <span class="abbreviated">LinReg<sup>tf</sup></span>
+		            <span class="original">Linear Regression</span>
+		            <span class="abbreviated">LinReg</span>
 		          </p>
 
 		        </div>
 		      </div>
 		    </a>
   		</div>
+  	</div>
+
+</section>
+
+<hr class="solid">
+
+<section class="cards">
+
+  	<span class="label">PyTorch</span>
+
+	<div class="row">
 
   		<div class="col-sm-4">
 			<a href="https://github.com/boyko11/LinRegTorch" target="_blank">
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression<sup>pt</sup></span>
-		            <span class="abbreviated">LinReg<sup>pt</sup></span>
+		            <span class="original">Linear Regression</span>
+		            <span class="abbreviated">LinReg</span>
+		          </p>
+
+		        </div>
+		      </div>
+		    </a>
+  		</div>
+  	</div>
+
+</section>
+
+<hr class="solid">
+
+<section class="cards">
+
+  	<span class="label">scikit-learn</span>
+
+	<div class="row">
+
+  		<div class="col-sm-4">
+			<a href="https://github.com/boyko11/LinRegSKLearn" target="_blank">
+		      <div class="card">
+		        <div class="card-body text-center">
+		          <p class="card-text">
+		            <span class="original">Linear Regression</span>
+		            <span class="abbreviated">LinReg</span>
 		          </p>
 
 		        </div>
@@ -312,12 +366,12 @@
   		</div>
 
   		<div class="col-sm-4">
-			<a href="https://github.com/boyko11/LinRegSKLearn" target="_blank">
+			<a href="https://github.com/boyko11/LogRegSKLearn" target="_blank">
 		      <div class="card">
 		        <div class="card-body text-center">
 		          <p class="card-text">
-		            <span class="original">Linear Regression<sup>sk</sup></span>
-		            <span class="abbreviated">LinReg<sup>sk</sup></span>
+		            <span class="original">Logistic Regression</span>
+		            <span class="abbreviated">LogitReg</span>
 		          </p>
 
 		        </div>
@@ -325,28 +379,21 @@
 		    </a>
   		</div>
 
+
   	</div>
 
-  	
-
 </section>
 
-<section id="legend">
-	<div><sup>s</sup> - from scratch</div>
-	<div><sup>tf</sup>  - Tensorflow</div>
-	<div><sup>pt</sup>  - PyTorch</div>
-	<div><sup>sk</sup>  - scikit-learn</div>
-</section>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-61999175-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-61999175-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>
